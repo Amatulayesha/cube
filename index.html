@@ -1,0 +1,149 @@
+<html>
+<head>
+<title>3D cube</title>
+<style>
+body {
+    background:black
+}
+
+.cube {
+width: 300px;
+height: 300px;
+position: relative;
+top: 120px; right:-100px;
+transform-style: preserve-3d;
+animation:reverse rotate 5s infinite ease-in-out;
+}
+
+.cube1 {
+width: 400px;
+height: 400px;
+position: relative;
+top:-200; left:500px;
+transform-style: preserve-3d;
+animation: rotate 5s infinite linear;
+}
+
+.cube2 {
+width: 400px;
+height: 400px;
+position: relative;
+top:-500; left:900px;
+transform-style: preserve-3d;
+animation: rotate 5s infinite linear;
+}
+
+.face {
+position: absolute;
+width: 200px;
+height: 200px;
+border: 2px solid black;
+opacity: 0.8;
+}
+
+.front {
+background-color: red;
+transform: translateZ(100px);
+}
+
+.back {
+background-color: blue;
+transform: rotateX(180deg) translateZ(100px);
+}
+
+.top {
+background-color: green;
+transform: rotateX(90deg) translateZ(100px);
+}
+
+.bottom {
+background-color: yellow;
+transform: rotateX(-90deg) translateZ(100px);
+}
+
+.left {
+background-color: orange;
+transform: rotateY(-90deg) translateZ(100px);
+}
+
+.right {
+background-color: purple;
+transform: rotateY(90deg) translateZ(100px);
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+@keyframes rotate {
+0% { transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+100% { transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg); }
+}
+</style>
+</head>
+<body>
+<div class="cube">
+<div class="face front">
+    <img src="./assets/emoji1.jpg"/>
+</div>
+<div class="face back">
+    <img src="./assets/emoji2.jpg"/>
+</div>
+<div class="face top">
+    <img src="./assets/emoji3.jpg"/>
+</div>
+<div class="face bottom">
+    <img src="./assets/emoji4.jpg"/>
+</div>
+<div class="face left">
+    <img src="./assets/emoji5.jpg"/>
+</div>
+<div class="face right">
+    <img src="./assets/emogi6.jpg"/>
+</div>
+</div>
+
+<div class="cube1">
+    <div class="face front">
+        <img src="./assets/d1.jpg">
+    </div>
+    <div class="face back">
+        <img src="./assets/d2.png">
+    </div>
+    <div class="face top">
+        <img src="./assets/d3.png">
+    </div>
+    <div class="face bottom">
+        <img src="./assets/d4.png">
+    </div>
+    <div class="face left">
+        <img src="./assets/d5.jpg">
+    </div>
+    <div class="face right">
+        <img src="./assets/d66.jpg">
+    </div>
+</div>
+
+<div class="cube2">
+    <div class="face front">
+        <img src="./assets/flower.gif">
+    </div>
+    <div class="face back">
+        <img src="./assets/flower.gif">
+    </div>
+    <div class="face top">
+        <img src="./assets/flower.gif">
+    </div>
+    <div class="face bottom">
+        <img src="./assets/flower.gif">
+    </div>
+    <div class="face left">
+        <img src="./assets/flower.gif">
+    </div>
+    <div class="face right">
+        <img src="./assets/flower.gif">
+    </div>
+
+</body>
+</html>
